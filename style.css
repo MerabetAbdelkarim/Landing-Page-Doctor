@@ -3,6 +3,7 @@ html{
 }
 :root{
     --main-color:#28be97;
+    --seconde-color:#22a17f;
     --text-color:#777;
     --bg-color:#e7f7f6;
     --outer-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
@@ -10,3 +11,22 @@ html{
     --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
     --inner-shadow-0: inset 0 0 0 #d0d0d0, inset 0 0 0 #f8f8f8;
 }
+
+/* Nav-bar Start */
+.nav-bar .navbar-light .navbar-nav .active>.nav-link{
+    color: var(--main-color);
+}
+.nav-bar .navbar-light .navbar-nav .nav-link:hover{
+    color: var(--seconde-color);
+}
+.nav-bar .btn-success{
+    background-color: var(--main-color);
+}
+.nav-bar .btn-success:hover{
+    background-color: var(--seconde-color);
+}
+.nav-bar .navbar-light .navbar-toggler{
+    padding: 10px;
+    border-radius: 50%;
+}
+/* Nav-bar End */
