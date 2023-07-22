@@ -34,10 +34,10 @@ html{
 
 
 /* Header Start */
-.landing{
+.main-header{
     margin-top: 50px;
 }
-.landing .animation-effect{
+.main-header .animation-effect{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -45,10 +45,10 @@ html{
     left: 0;
     z-index: 100;
 }
-.landing .animation-effect .effect-1{
+.main-header .animation-effect .effect-1{
     position: absolute;
     top: 90%;
-    left: 90%;
+    left: 80%;
     width: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -57,10 +57,18 @@ html{
     animation: upToDown  linear 3s infinite alternate;
 }
 @keyframes upToDown {
-    0%   {left:90%; top:90%;}
-    100% {left:90%; top:94%;}
+    0%   {left:80%; top:90%;}
+    100% {left:80%; top:94%;}
 }
-.landing .animation-effect .effect-2{
+
+.main-header .animation-effect .effect-1 div{
+    margin: 2px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+}
+.main-header .animation-effect .effect-2{
     position: absolute;
     top: 80%;
     left: 40%;
@@ -75,37 +83,29 @@ html{
     50%  {scale: 1;}
     100% {scale: 1.6;}
 }
-.landing .animation-effect .effect-1 div{
-    margin: 2px;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background-color: var(--main-color);
-}
-
-.landing .landing-text  .section-header{
+.main-header .main-header_text  .section-header{
     font-size: 45px;
 }
-.landing .landing-text  .section-header span{
+.main-header .main-header_text  .section-header span{
     font-weight: 600;
 }
-.landing .landing-text  .section-body p{
+.main-header .main-header_text  .section-body p{
     font-size: 20px;
     color:var(--text-color);
 }
-.landing .landing-text  .section-action button{
+.main-header .main-header_text  .section-action button{
     background-color: var(--main-color);
 }
-.landing .landing-text  .section-action button:hover{
+.main-header .main-header_text  .section-action button:hover{
     background-color: var(--seconde-color);
 }
 
-.landing .landing-image{
+.main-header .main-header_image{
     position: relative;
     margin-left: 50px;
 }
 
-.landing .landing-image .box-lift{
+.main-header .main-header_image .box-lift{
     background-color: white;
     padding: 10px;
     position: absolute;
@@ -117,7 +117,7 @@ html{
     box-shadow: var(--outer-shadow);
     z-index: 100;
 }
-.landing .landing-image .box-lift .media .icon{
+.main-header .main-header_image .box-lift .media .icon{
     background-color: var(--bg-color);
     border-radius: 50%;
     margin-right: 5px;
@@ -127,12 +127,12 @@ html{
     line-height: 40px;
     text-align: center;
 }
-.landing .landing-image .box-lift .media .media-body p {
+.main-header .main-header_image .box-lift .media .media-body p {
     font-size: 13px;
     color: var(--text-color);
     margin-top: -10px;
 }
-.landing .landing-image .circle-effect{
+.main-header .main-header_image .circle-effect{
     position: absolute;
     top: 50%;
     left: 36%;
@@ -143,7 +143,7 @@ html{
     border-radius: 50%;
     z-index: -1;
 }
-.landing .landing-image .box-rigth{
+.main-header .main-header_image .box-rigth{
     background-color: white;
     padding: 10px;
     position: absolute;
@@ -155,10 +155,10 @@ html{
     box-shadow: var(--outer-shadow);
     z-index: 100;
 }
-.landing .landing-image .box-rigth p{
+.main-header .main-header_image .box-rigth p{
     font-size: 13px;
 }
-.landing .landing-image .box-rigth p .icon{
+.main-header .main-header_image .box-rigth p .icon{
     font-size: 14px;
     color: var(--main-color);
 }
@@ -167,31 +167,93 @@ html{
 
 /* Screen Extra large */
 @media (max-width: 1200px) {
-    .landing .landing-image .circle-effect {
+    .main-header .main-header_image .circle-effect {
         left: 45%;
     }
+    
+.main-header .animation-effect .effect-1{
+    top: 90%;
+    left: 90%;
+}
+@keyframes upToDown {
+    0%   {left:90%; top:90%;}
+    100% {left:90%; top:94%;}
+}
+
+.main-header .animation-effect .effect-1 div{
+    margin: 2px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+}
+.main-header .animation-effect .effect-2{
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #22a17f;
+    animation: scaleTogel  linear 3s infinite alternate;
+}
+@keyframes scaleTogel {
+    0%   {}
+    50%  {scale: 1;}
+    100% {scale: 1.6;}
+}
 }
 
 /* Screen Large */
 @media (max-width: 992px) {
-    .landing .landing-image .circle-effect {
+    .main-header .main-header_image .circle-effect {
         left: 29%;
     }
+    
+.main-header .animation-effect .effect-1{
+    left: 70%;
+}
+@keyframes upToDown {
+    0%   {left: 70%; top:90%;}
+    100% {left: 70%; top:94%;}
+}
+.main-header .animation-effect .effect-2{
+    position: absolute;
+    top: 70%;
+    left: 15%;
+}
 }
 
 /* Screen Medium */
 @media (max-width: 768px) {
-    .landing .landing-image .circle-effect {
+    .main-header .main-header_image .circle-effect {
         left: 37%;
     }
+    .main-header .animation-effect .effect-2{
+        top: 75%;
+        left: 10%;
+    }
+
 }
 
 /* Screen Small */
 @media (max-width: 575px) {
-    .landing .landing-image .circle-effect {
+    .main-header .main-header_image .circle-effect {
         left: 42%;
     }
-}
 
+    .main-header .animation-effect .effect-1{
+        top: 88%;
+        left: 80%;
+    }
+    @keyframes upToDown {
+        0%   {left:80%; top:88%;}
+        100% {left:80%; top:90%;}
+    }
+
+    .main-header .animation-effect .effect-2{
+        left: 15%;
+    }
+}
 
 /* Header End */
