@@ -30,3 +30,78 @@ html{
     border-radius: 50%;
 }
 /* Nav-bar End */
+
+/* Header Start */
+.landing{
+    margin-top: 50px;
+}
+.landing .landing-text  .section-header{
+    font-size: 45px;
+}
+.landing .landing-text  .section-header span{
+    font-weight: 600;
+}
+.landing .landing-text  .section-body p{
+    font-size: 20px;
+    color:var(--text-color);
+}
+.landing .landing-text  .section-action button{
+    background-color: var(--main-color);
+}
+.landing .landing-text  .section-action button:hover{
+    background-color: var(--seconde-color);
+}
+.landing .landing-image{
+    position: relative;
+    margin-left: 50px;
+}
+.landing .landing-image .box-lift{
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    top: 20%;
+    left: -10%;
+    height: 70px;
+    width: 170px;
+    border-radius: 5px;
+    box-shadow: var(--outer-shadow);
+    z-index: 100;
+}
+.landing .landing-image .box-lift .media .icon{
+    background-color: var(--bg-color);
+    border-radius: 50%;
+    margin-right: 5px;
+    height: 40px;
+    width: 40px;
+    color: var(--main-color);
+    line-height: 40px;
+    text-align: center;
+}
+.landing .landing-image .box-lift .media .media-body p {
+    font-size: 13px;
+    color: var(--text-color);
+    margin-top: -10px;
+}
+
+.landing .landing-image .box-rigth{
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    height: 70px;
+    width: 170px;
+    border-radius: 5px;
+    box-shadow: var(--outer-shadow);
+    z-index: 100;
+}
+.landing .landing-image .box-rigth p{
+    font-size: 13px;
+}
+.landing .landing-image .box-rigth p .icon{
+    font-size: 14px;
+    color: var(--main-color);
+}
+
+
+/* Header End */
