@@ -31,10 +31,58 @@ html{
 }
 /* Nav-bar End */
 
+
+
 /* Header Start */
 .landing{
     margin-top: 50px;
 }
+.landing .animation-effect{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.landing .animation-effect .effect-1{
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    width: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    animation: upToDown  linear 3s infinite alternate;
+}
+@keyframes upToDown {
+    0%   {left:90%; top:90%;}
+    100% {left:90%; top:94%;}
+}
+.landing .animation-effect .effect-2{
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #22a17f;
+    animation: scaleTogel  linear 3s infinite alternate;
+}
+@keyframes scaleTogel {
+    0%   {}
+    50%  {scale: 1;}
+    100% {scale: 1.6;}
+}
+.landing .animation-effect .effect-1 div{
+    margin: 2px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+}
+
 .landing .landing-text  .section-header{
     font-size: 45px;
 }
@@ -51,10 +99,12 @@ html{
 .landing .landing-text  .section-action button:hover{
     background-color: var(--seconde-color);
 }
+
 .landing .landing-image{
     position: relative;
     margin-left: 50px;
 }
+
 .landing .landing-image .box-lift{
     background-color: white;
     padding: 10px;
@@ -82,7 +132,17 @@ html{
     color: var(--text-color);
     margin-top: -10px;
 }
-
+.landing .landing-image .circle-effect{
+    position: absolute;
+    top: 50%;
+    left: 36%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    z-index: -1;
+}
 .landing .landing-image .box-rigth{
     background-color: white;
     padding: 10px;
@@ -101,6 +161,36 @@ html{
 .landing .landing-image .box-rigth p .icon{
     font-size: 14px;
     color: var(--main-color);
+}
+
+
+
+/* Screen Extra large */
+@media (max-width: 1200px) {
+    .landing .landing-image .circle-effect {
+        left: 45%;
+    }
+}
+
+/* Screen Large */
+@media (max-width: 992px) {
+    .landing .landing-image .circle-effect {
+        left: 29%;
+    }
+}
+
+/* Screen Medium */
+@media (max-width: 768px) {
+    .landing .landing-image .circle-effect {
+        left: 37%;
+    }
+}
+
+/* Screen Small */
+@media (max-width: 575px) {
+    .landing .landing-image .circle-effect {
+        left: 42%;
+    }
 }
 
 
