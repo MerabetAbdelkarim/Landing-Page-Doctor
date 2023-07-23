@@ -4,6 +4,7 @@ html{
 :root{
     --main-color:#28be97;
     --seconde-color:#22a17f;
+    --third-color:rgb(245, 245, 245);
     --text-color:#777;
     --bg-color:#e7f7f6;
     --outer-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
@@ -263,6 +264,7 @@ html{
 /* About Us Start  */
 .about{
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 .about .about_text .section-header {
     font-size: 45px;
@@ -283,9 +285,37 @@ html{
 .about .about_text .section-action > button:hover{
     background-color: var(--seconde-color);
 }
+
 /* About Us Start  */
 
+/* Services Start */
+.services{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--third-color);
+}
+.services .body-section .nav-pills .nav-link{
+    background-color: none;
+    margin-bottom: 5px;
+}
+.services .body-section .nav-pills .nav-link:hover{
+    background-color: var(--main-color);
+    transition: background-color 0.5s;
+}
+.services .body-section .nav-pills .nav-link.active{
+    background-color: var(--main-color);
+    color: white;
+}
+.services .body-section .tab-content{
+    background-color: white;
+    padding: 40px;
+    
+}
+/* Services End */
+
+
 /* Team Start */
+
 .team .body-section  .card  {
     border-radius: 5px;
 }
@@ -293,7 +323,7 @@ html{
     border: 1px solid #22a17f;
 }
 .team .body-section  .card .card-body {
-    background-color: rgb(245, 245, 245);
+    background-color: var(--third-color);
 }
 .team .body-section  .card .card-body .image {
     background-color: red;
@@ -318,4 +348,5 @@ html{
         padding: 5px;
     }
 }
+
 /* Team End */
