@@ -43,7 +43,7 @@ html{
     height: 100%;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: -1;
 }
 .main-header .animation-effect .effect-1{
     position: absolute;
@@ -95,6 +95,7 @@ html{
 }
 .main-header .main-header_text  .section-action button{
     background-color: var(--main-color);
+    margin-bottom: 50px;
 }
 .main-header .main-header_text  .section-action button:hover{
     background-color: var(--seconde-color);
@@ -257,3 +258,64 @@ html{
 }
 
 /* Header End */
+
+
+/* About Us Start  */
+.about{
+    margin-top: 100px;
+}
+.about .about_text .section-header {
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 40px;
+}
+.about .about_text .section-header > span {
+    color: var(--main-color);
+    font-weight: 600;
+}
+.about .about_text .section-header > img {
+    margin-top: -10px;
+}
+.about .about_text .section-action > button {
+    background-color: var(--main-color);
+    margin-bottom:30px ;
+}
+.about .about_text .section-action > button:hover{
+    background-color: var(--seconde-color);
+}
+/* About Us Start  */
+
+/* Team Start */
+.team .body-section  .card  {
+    border-radius: 5px;
+}
+.team .body-section  .card:hover{
+    border: 1px solid #22a17f;
+}
+.team .body-section  .card .card-body {
+    background-color: rgb(245, 245, 245);
+}
+.team .body-section  .card .card-body .image {
+    background-color: red;
+    height: 10px;
+}
+.team .body-section  .card .card-body .icon {
+    color: black;
+    background-color: none;
+    margin-right: 20px;
+    padding: 10px;
+}
+.team .body-section  .card .card-body .icon:hover {
+    color: white;
+    background-color: var(--main-color);
+    transition: background-color 0.7s ,color 0.7s;
+}
+
+/* Screen Large */
+@media (max-width: 992px )and (min-width: 768px) {
+    .team .body-section  .card .card-body .icon {
+        margin-right: 5px;
+        padding: 5px;
+    }
+}
+/* Team End */
