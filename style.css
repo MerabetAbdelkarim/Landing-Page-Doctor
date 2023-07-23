@@ -315,7 +315,9 @@ html{
 
 
 /* Team Start */
-
+.team{
+    margin-bottom: 100px;
+}
 .team .body-section  .card  {
     border-radius: 5px;
 }
@@ -350,3 +352,33 @@ html{
 }
 
 /* Team End */
+
+/* Facility Start */
+.facility{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--third-color);
+}
+.facility .body-section .card{
+    padding: 30px;
+    position: relative;
+    bottom: 0px;
+    margin-bottom: 30px;
+    background-color: white;
+    border: none;
+}
+.facility .body-section .card:hover{
+    position: relative;
+    bottom: 10px;
+    box-shadow: var(--outer-shadow);
+    transition: bottom 0.4s ,box-shadow 0.4s;
+}
+.facility .body-section .card .icon{
+    color: var(--main-color);
+    font-size: 30px;
+}
+.facility .body-section .card .content{
+    font-size: 17px;
+    color: var(--text-color);
+}
+/* Facility End */
