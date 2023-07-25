@@ -382,3 +382,55 @@ html{
     color: var(--text-color);
 }
 /* Facility End */
+
+
+/*  Partners Start  */
+.partners{
+    padding: 20px 0;
+    margin: 100px 0;
+    background-color: var(--third-color);
+}
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+.logo-img {
+	height: 150px;
+    width: 150px;
+	object-fit: fill;
+    padding: 0;
+}
+.logo-img:hover {
+background-color: var(--main-color);
+padding: 10px 0 0 10px;
+transition: padding 0.3s;
+}
+
+
+
+/* large - display 6 */
+@media (min-width: 992px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+    transform: translateX(15%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+    display: none;
+    }
+}
+
+
+
+@media ( max-width: 991px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+/*  Partners End  */
