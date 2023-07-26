@@ -34,9 +34,9 @@
     <!-- Header Start  -->
     <header>
         <!-- nav-bar Start -->
-        <section class="nav-bar">
+        <section class="nav-bar ">
             <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light">
+                <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
                     <a class="navbar-brand" href="#">
                         <img src="assets/imges/Logo.svg" alt="logo" width="150px" >
                     </a>
@@ -745,14 +745,23 @@
 
         // Button Go To Top Start
         const toTop = document.querySelector(".to-top");
-        window.addEventListener("scroll", () => {
-        if (window.pageYOffset > 100) {
-    toTop.classList.add("active");
-  } else {
+            window.addEventListener("scroll", () => {
+            if (window.pageYOffset > 100) {
+            toTop.classList.add("active");
+        } else {
             toTop.classList.remove("active");
             }
         })
         // Button Go To Top End
+
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.navbar').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.navbar').removeClass('affix');
+            }
+        });
     </script>
 </body>
 </html>

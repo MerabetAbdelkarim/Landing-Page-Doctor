@@ -164,9 +164,6 @@ html{
     font-size: 14px;
     color: var(--main-color);
 }
-
-
-
 /* Screen Extra large */
 @media (max-width: 1200px) {
     .main-header .main-header_image .circle-effect {
@@ -263,8 +260,9 @@ html{
 
 /* About Us Start  */
 .about{
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin: 100px 0;
+    padding: 100px 0;
+
 }
 .about .about_text .section-header {
     font-size: 45px;
@@ -290,8 +288,7 @@ html{
 
 /* Services Start */
 .services{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 0;
     background-color: var(--third-color);
 }
 .services .body-section .nav-pills .nav-link{
@@ -317,6 +314,7 @@ html{
 /* Team Start */
 .team{
     margin-bottom: 100px;
+    padding: 100px 0;
 }
 .team .body-section  .card  {
     border-radius: 5px;
@@ -386,7 +384,7 @@ html{
 
 /*  Partners Start  */
 .partners{
-    padding: 20px 0;
+    padding: 100px 0;
     margin: 100px 0;
     background-color: var(--third-color);
 }
@@ -438,6 +436,7 @@ transition: padding 0.3s;
 /* Contact Us Start */
 .contact{
 margin: 100px 0;
+padding: 100px 0;
 }
 .contact .body-section .info .media .icon{
     border: 1px solid var(--main-color);
@@ -510,3 +509,7 @@ html {
     scroll-behavior: smooth;
   }
 /* Button Go To Top End */
+.affix {
+    background-color: white;
+    border-bottom:1px solid #e5e5e5;
+}
