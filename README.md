@@ -7,7 +7,7 @@ This is a landing page doctor. The following languages have been used: html, css
 You can check out the slides here.
 
 **Check the demo** hosted on github:
-- [Landing Page Doctor ](https://merabetabdelkarim.github.io/Landing-Page-Doctor).
+[Landing Page Doctor ](https://merabetabdelkarim.github.io/Landing-Page-Doctor).
 
 # Installation
 
