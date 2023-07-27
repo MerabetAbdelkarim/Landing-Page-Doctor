@@ -13,7 +13,7 @@ https://merabetabdelkarim.github.io/Landing-Page-Doctor
 
 Clone this repository.
 
-    $git clone https://github.com/MerabetAbdelkarim/Landing-Page-Doctor.git
+    $ git clone https://github.com/MerabetAbdelkarim/Landing-Page-Doctor.git
 
 
 
