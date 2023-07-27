@@ -19,6 +19,7 @@ html{
 }
 .nav-bar .navbar-light .navbar-nav .nav-link:hover{
     color: var(--seconde-color);
+    transition: color 0.4s;
 }
 .nav-bar .btn-success{
     background-color: var(--main-color);
@@ -266,8 +267,7 @@ html{
 
 /* About Us Start  */
 .about{
-    margin: 40px 0;
-    padding-top: 100px;
+    padding: 50px 0;
 
 }
 .about .about_text .section-header {
@@ -294,7 +294,7 @@ html{
 
 /* Services Start */
 .services{
-    padding: 40px 0;
+    padding: 50px 0;
     background-color: var(--third-color);
 }
 .services .body-section .nav-pills .nav-link{
@@ -319,7 +319,7 @@ html{
 
 /* Team Start */
 .team{
-    padding: 40px 0;
+    padding: 50px 0;
 }
 .team .body-section  .card  {
     border-radius: 5px;
@@ -358,7 +358,7 @@ html{
 
 /* Facility Start */
 .facility{
-    padding: 40px 0;
+    padding: 50px 0;
     background-color: var(--third-color);
 }
 .facility .body-section .card{
@@ -388,7 +388,7 @@ html{
 
 /*  Partners Start  */
 .partners{
-    padding: 40px 0;
+    padding: 50px 0;
     background-color: var(--third-color);
 }
 .carousel-inner .carousel-item.active,
@@ -438,7 +438,7 @@ transition: padding 0.3s;
 
 /* Contact Us Start */
 .contact{
-    padding: 40px 0;
+    padding: 50px 0;
 }
 .contact .body-section .info .media .icon{
     border: 1px solid var(--main-color);
