@@ -30,6 +30,10 @@ html{
     padding: 10px;
     border-radius: 50%;
 }
+.affix {
+    background-color: white;
+    border-bottom:1px solid #e5e5e5;
+}
 /* Nav-bar End */
 
 
@@ -507,7 +511,4 @@ html {
     scroll-behavior: smooth;
   }
 /* Button Go To Top End */
-.affix {
-    background-color: white;
-    border-bottom:1px solid #e5e5e5;
-}
+
