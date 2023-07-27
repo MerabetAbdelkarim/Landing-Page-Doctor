@@ -258,10 +258,12 @@ html{
 /* Header End */
 
 
+
+
 /* About Us Start  */
 .about{
-    margin: 100px 0;
-    padding: 100px 0;
+    margin: 40px 0;
+    padding-top: 100px;
 
 }
 .about .about_text .section-header {
@@ -288,7 +290,7 @@ html{
 
 /* Services Start */
 .services{
-    padding: 100px 0;
+    padding: 40px 0;
     background-color: var(--third-color);
 }
 .services .body-section .nav-pills .nav-link{
@@ -313,8 +315,7 @@ html{
 
 /* Team Start */
 .team{
-    margin-bottom: 100px;
-    padding: 100px 0;
+    padding: 40px 0;
 }
 .team .body-section  .card  {
     border-radius: 5px;
@@ -353,8 +354,7 @@ html{
 
 /* Facility Start */
 .facility{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 40px 0;
     background-color: var(--third-color);
 }
 .facility .body-section .card{
@@ -384,8 +384,7 @@ html{
 
 /*  Partners Start  */
 .partners{
-    padding: 100px 0;
-    margin: 100px 0;
+    padding: 40px 0;
     background-color: var(--third-color);
 }
 .carousel-inner .carousel-item.active,
@@ -435,8 +434,7 @@ transition: padding 0.3s;
 
 /* Contact Us Start */
 .contact{
-margin: 100px 0;
-padding: 100px 0;
+    padding: 40px 0;
 }
 .contact .body-section .info .media .icon{
     border: 1px solid var(--main-color);
